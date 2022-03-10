@@ -1,0 +1,67 @@
+<h1>Calculadora da Média</h1>
+<body>
+	<p>
+    <h2>Calculadora da Média</h2>
+    <h3>Adicione suas notas Bimestrais</h3>
+    <TABLE BORDER=2 CELLSPACING=2 CELLPADDING=2>
+
+    <tr>
+    <td>Semestre</td>
+    <td>Peso</td>
+    <td>Nota</td>
+    </tr>
+
+    <tr>
+    <td>Primeiro</td>
+    <td>25%</td>
+    <td><input type="text" id="n1" size=2 value=""></td>
+    </tr>
+
+    <tr>
+    <td>Segundo</td>
+    <td>25%</td>
+    <td><input type="text" id="n2" size=2 value=""></td>
+    </tr>
+
+    <tr>
+    <td>Terceiro</td>
+    <td>25%</td>
+    <td><input type="text" id="n3" size=2 value=""></td>
+    </tr>
+
+    <tr>
+    <td>Quarto</td>
+    <td>25%</td>
+    <td><input type="text" id="n4" size=2 value=""></td>
+    </tr>
+
+    <br><br>
+			 <input type="button" value="Calcular sua média"
+        onclick="calculator()">
+
+    <hr>
+    <div id="resultado" style="width: 100%;"></div>
+    	<div id="notaFinal" style="width: 100%;"></div>
+</p>
+</body>
+<script>
+	 function calculator()
+        {
+            var grade1=parseFloat(document.getElementById('n1').value*0.25);
+            var grade2=parseFloat(document.getElementById('n2').value*0.25);
+            var grade3=parseFloat(document.getElementById('n3').value*0.25);
+            var grade4=parseFloat(document.getElementById('n4').value*0.25);
+            var total=grade1+grade2+grade3+grade4;
+
+            var displayResultado=document.getElementById('resultado');
+            var displayNotaFinal=document.getElementById('notaFinal');
+            var result = "";
+            if(total >=6){
+                    displayResultado.innerHTML="Você está APROVADO!";
+				}else{
+                    displayNotaFinal.innerHTML="Você está REPROVADO!";
+				}
+                displayNotaFinal.innerHTML+='</br>Sua nota final foi: ' +total;
+				}
+	</script>
+

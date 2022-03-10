@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Conversor de Moeda/Temperatura/Velocidade</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- Conversor de Moeda -->
+<selection class="conversor_box">
+	<h2 class="t-p">Conversor de Moedas</h2>
+
+	<div class="form flex-container">
+		<input id="valor" type="number" placeholder="R$">
+		<button type="submit" onclick="converterMoeda()">Converter</button>
+	</div>
+
+	<div class="result flex-container">
+		<article class="result_box">
+			<h3 class="result_sub">Dolar</h3>
+			<p id="resultado_txt_dol" class="result_txt"></p>
+		</article>
+
+		<article class="result_box">
+			<h3 class="result_sub">Euro</h3>
+			<p id="resultado_txt_eur" class="result_txt"></p>
+		</article>
+
+		<article class="result_box">
+			<h3 class="result_sub">Bitcoin</h3>
+			<p id="resultado_txt_BTC" class="result_txt"></p>
+		</article>
+	</div>
+</selection>
+
+<!-- Conversor de Temperatura -->
+<selection class="conversor_box">
+	<h2 class="t-p">Conversor de Temperatura</h2>
+
+	<div class="form flex-container">
+		<input id="tempC" type="number" placeholder="Celsius">
+		<button type="submit" onclick="converterTemperatura()">Converter</button>
+	</div>
+
+	<div class="result flex-container">
+		<article class="result_box">
+			<h3 class="result_sub">Kelvin</h3>
+			<p id="resultado_txt_kelvin" class="result_txt"></p>
+		</article>
+
+		<article class="result_box">
+			<h3 class="result_sub">Fahrenheit</h3>
+			<p id="resultado_txt_fahrenheit" class="result_txt"></p>
+		</article>
+	</div>
+</selection>
+
+<!-- Conversor de Velocidade -->
+<selection class="conversor_box">
+	<h2 class="t-p">Conversor de Velocidade</h2>
+
+	<div class="form flex-container">
+		<input id="km" type="number" placeholder="d => Km">
+		<button type="submit" onclick="converterVelocidade()">Converter</button>
+	</div>
+
+	<div class="result flex-container">
+		<article class="result_box">
+			<h3 class="result_sub">Tempo de viagem em Anos-Luz</h3>
+			<p id="resultado_txt_anoluz" class="result_txt"></p>
+		</article>
+	</div>
+</selection>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
