@@ -1,0 +1,58 @@
+* {
+    text-align: center;
+  }
+  
+  body {
+    font-family: "Roboto Mono", monospace;
+    min-height: 400px;
+    background-color: #ffffff;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+  }
+  
+  .page-title {
+    color: #000000;
+    margin: 0 0 5px;
+  }
+  
+  .page-subtitle {
+    color: #000000;
+    margin-top: 5px;
+  }
+  
+  table {
+    border: 2px solid #000000;
+    border-collapse: collapse;
+  }
+  
+  h1 {
+    color: #000000;
+  }
+  
+  th,
+  tr,
+  td {
+    border: solid 1px #000000;
+    color: #000000;
+  }
+  
+  .clsEscudoFlamengo {
+    position: relative;
+    width: 25%;
+  }
+  .clsEscudoAvai {
+    position: relative;
+    width: 30%;
+  }
+  .clsEscudoBayern {
+    position: relative;
+    width: 25%;
+  }
+  
